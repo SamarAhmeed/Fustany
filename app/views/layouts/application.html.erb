@@ -1,17 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Fustany</title>
+    <title>fuzzyumbrella</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-<!--    <link href="http://amplifythemes.com/preview/cartzee/assets/css/bootstrap.min.css" rel='stylesheet' type='text/css' />-->
-<!--    <link href="http://amplifythemes.com/preview/cartzee/assert/css/style.css" rel='stylesheet' type='text/css' />-->
-<!--    <link href="http://amplifythemes.com/preview/cartzee/assert/css/fontawesome-all.css" rel="stylesheet">-->
-
     <!--Bootstrap-->
     <link rel="stylesheet" type="text/css" href="http://amplifythemes.com/preview/cartzee/assets/css/bootstrap.min.css">
     <!--Revolution Slider-->
@@ -48,10 +44,12 @@
       <div class="container">
         <ul style="padding-left: 30%">
           <li><%= link_to 'HOME', root_path, class: "active" %></li>
-          <li><a href="#">Shop</a>
+          <li><a href="#">Collections</a>
             <ul>
-              <li><a href="products">Products</a></li>
-              <li><a href="categories">Categories</a></li>
+<!--              <li><a href="products">Products</a></li>-->
+              <li><%= link_to 'Products', products_path%></li>
+              <li><%= link_to 'Categories', categories_path%></li>
+<!--              <li><a href="categories">Categories</a></li>-->
             </ul>
           </li>
           <% if current_user %>
@@ -75,13 +73,6 @@
       <div class="container">
         <div class="footer_widget">
           <div class="row">
-            <div class="col-lg-3 col-md-6 col-xs-12">
-              <h4 class="widget-title">My Account</h4>
-              <ul class="widget-link">
-                <li><a href="#">My account</a></li>
-                <li><a href="#">Forget password</a></li>
-              </ul>
-            </div>
 
             <div class="col-lg-3 col-md-6 col-xs-12">
               <h4 class="widget-title">Contact Us</h4>
