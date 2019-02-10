@@ -1,7 +1,7 @@
 <p id="notice"><%= notice %></p>
 <div class="product_info2">
   <p>
-    <strong>Name:</strong>
+    <strong style="color: hotpink">Name:</strong>
     <%= @product.pro_name %>
   </p>
 
@@ -10,11 +10,13 @@
     <i style="color: #ec96af;"><%='$' + @product.price.to_s%></i>
   </p>
   <p>
-    <strong>Categories:</strong>
-    <% @product.categories.each do |cat| %>
-      <%= cat.cat_name %>
+    <strong style="color: hotpink">Categories:</strong>
+    <% i = 1 %>
+    <% @product.categories.each do |cat| %><br />
+      <%= i.to_s + '- '+ cat.cat_name %>
+      <% i +=1 %>
     <%end%>
   </p>
-  <%= link_to 'Edit', edit_product_path(@product) %> |
+<!--  <%#= link_to 'Edit', edit_product_path(@product) %> |-->
   <%= link_to 'Back', products_path %>
 </div>

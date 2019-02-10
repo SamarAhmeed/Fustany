@@ -1,15 +1,17 @@
 <p id="notice"><%= notice %></p>
   <div class="product_info2">
   <p>
-    <strong>Name:</strong>
+    <strong style="color: hotpink">Name:</strong>
     <%= @category.cat_name %>
   </p>
   <p>
-    <strong>Products:</strong>
-    <% @category.products.each do |pro| %>
-      <%= pro.pro_name %>
+    <strong style="color: hotpink"><i>Products:</i></strong>
+    <% i = 1 %>
+    <% @category.products.each do |pro| %><br />
+      <%= i.to_s + '- '+ pro.pro_name %>
+      <% i +=1 %>
     <%end%>
   </p>
-  <%= link_to 'Edit', edit_category_path(@category) %> |
+<!--  <%#= link_to 'Edit', edit_category_path(@category) %> |-->
   <%= link_to 'Back', categories_path %>
 </div>
