@@ -1,24 +1,25 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+you can find this task deployed to Heroku through this link: https://safe-bayou-78506.herokuapp.com/
 
-Things you may want to cover:
+To run The server you should install 
 
-* Ruby version
+* sudo apt-get install software-properties-common
+* sudo apt-add-repository -y ppa:rael-gc/rvm
+* sudo apt-get update
+* sudo apt-get install rvm
+* rvm install ruby
+* man rvm
+* rvm install ruby-2.4.1
+* rvm --default use ruby-2.4.1
+* gem install rails
+* gem install bundler
 
-* System dependencies
+Testing Done with RSpec Shoulda Matcher type in your cmd
 
-* Configuration
+* rspec
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Things to do in the application later:
+* Testing the controller using RSpec.
+* Edit bootstrap.
+* Fix the deploy problem.
