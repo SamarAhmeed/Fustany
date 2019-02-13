@@ -20,10 +20,5 @@ Testing Done with RSpec Shoulda Matcher type in your cmd
 * rspec
 
 Things to do in the application later:
-<<<<<<< HEAD
+
 * Testing the controller using RSpec
-* Edit bootstrap
-=======
-* Testing the controller using RSpec.
-* Edit bootstrap.
-* Fix the deploy problem.
