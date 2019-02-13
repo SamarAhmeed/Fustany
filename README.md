@@ -1,6 +1,6 @@
 # README
 
-you can find this task deployed to Heroku through this link: https://safe-bayou-78506.herokuapp.com/
+you can find this task deployed to Heroku through this link: http://safe-bayou-78506.herokuapp.com/
 
 To run The server you should install 
 
@@ -27,4 +27,3 @@ Things to do in the application later:
 * Testing the controller using RSpec.
 * Edit bootstrap.
 * Fix the deploy problem.
->>>>>>> a2e60c5fda8f3c1fad3f820fa30af5d032924279
